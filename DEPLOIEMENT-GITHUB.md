@@ -30,7 +30,7 @@ Le plus simple est d'utiliser GitHub Actions :
 4. Configurez le workflow GitHub Pages pour lancer `pnpm install --frozen-lockfile`, puis `pnpm build` et publier le dossier `dist`.
 5. Dans **Settings > Pages**, choisissez **GitHub Actions** comme source.
 
-Le site fonctionne aussi sans variables Supabase : il reste alors en mode aperçu et stocke temporairement les réponses dans le navigateur via `localStorage`. La petite mention « Mode aperçu » indique ce cas pour éviter toute confusion.
+Le site contient déjà l'URL et la clé **publishable** de ce projet Supabase dans `client/src/const.ts`, afin que la version GitHub Pages fonctionne immédiatement. Les variables GitHub restent disponibles pour remplacer cette configuration lors d'un futur changement de projet. La clé publishable n'est pas une clé secrète : l'accès est protégé par les règles RLS de la table.
 
 ## 4. Personnaliser l'événement
 

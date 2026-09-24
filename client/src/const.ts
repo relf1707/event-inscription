@@ -43,9 +43,11 @@ export const requiredFields: Array<keyof Registration> = [
 
 export const storageKey = "rassemble-registration-submissions";
 
-export const isSupabaseConfigured = Boolean(
-  import.meta.env.VITE_SUPABASE_URL && import.meta.env.VITE_SUPABASE_ANON_KEY,
-);
+// La clé publishable Supabase est prévue pour être utilisée côté navigateur.
+// La sécurité des inscriptions repose sur la RLS de supabase/schema.sql.
+const configuredSupabaseUrl = "https://fdzrhcpetqotpxrslxgw.supabase.co";
+const configuredSupabaseKey = "sb_publishable_Lss-jgOtSW16B6aJEb9B0w_ygNUKTa_";
 
-export const supabaseUrl = import.meta.env.VITE_SUPABASE_URL ?? "";
-export const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY ?? "";
+export const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || configuredSupabaseUrl;
+export const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || configuredSupabaseKey;
+export const isSupabaseConfigured = Boolean(supabaseUrl && supabaseAnonKey);
