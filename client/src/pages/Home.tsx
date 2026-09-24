@@ -186,9 +186,9 @@ export default function Home() {
         </section>
 
         <section id="evenement" className="event-details section-pad">
-          <div className="section-kicker">LE RENDEZ-VOUS</div>
+          <div className="section-kicker">LA RENCONTRE</div>
           <div className="details-heading">
-            <h2>Les détails,<br /><em>en un coup d'œil.</em></h2>
+            <h2>Un temps de communion,<br /><em>à vivre ensemble.</em></h2>
             <p>Pour nous permettre de vous accueillir dans les meilleures conditions, prenez un instant pour nous transmettre votre réponse.</p>
           </div>
           <div className="detail-cards">
@@ -198,11 +198,11 @@ export default function Home() {
             </div>
             <div className="detail-card">
               <div className="detail-icon"><Clock3 size={21} /></div>
-              <div><span>Horaire</span><strong>{eventConfig.time}</strong></div>
+              <div><span>Programme</span><strong>{eventConfig.time}</strong></div>
             </div>
             <div className="detail-card">
               <div className="detail-icon"><MapPin size={21} /></div>
-              <div><span>Lieu</span><strong>{eventConfig.location}</strong></div>
+              <div><span>Lieu de rencontre</span><strong>{eventConfig.location}</strong></div>
             </div>
           </div>
         </section>
@@ -211,10 +211,10 @@ export default function Home() {
           <div className="registration-layout">
             <div className="registration-intro">
               <div className="section-kicker section-kicker-dark">VOTRE RÉPONSE</div>
-              <h2>Un oui, un non —<br /><em>l'essentiel est de répondre.</em></h2>
+              <h2>Votre présence,<br /><em>une joie à partager.</em></h2>
               <p>Merci de compléter les informations ci-contre. Cela ne vous prendra qu'une minute.</p>
               <div className="privacy-note"><ShieldCheck size={18} /><span>Vos informations restent confidentielles et sont uniquement utilisées pour l'organisation de l'événement.</span></div>
-              <div className="mini-stat"><div className="mini-stat-icons"><span>V</span><span>M</span><span>A</span><span>+</span></div><div><strong>Merci pour votre réponse</strong><span>Chaque confirmation compte.</span></div></div>
+              <div className="mini-stat"><div className="mini-stat-icons"><span>F</span><span>P</span><span>A</span><span>+</span></div><div><strong>Merci pour votre réponse</strong><span>Chaque présence compte.</span></div></div>
             </div>
 
             <div className="form-card">

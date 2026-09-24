@@ -1,9 +1,9 @@
 export const eventConfig = {
-  brand: "Rassemble",
-  eyebrow: "RENDEZ-VOUS 2026",
-  title: "On se retrouve bientôt.",
+  brand: "Notre Église",
+  eyebrow: "RENCONTRE DE L'ÉGLISE",
+  title: "Un moment pour se retrouver.",
   description:
-    "Confirmez votre présence en quelques secondes. Votre réponse nous aide à préparer une expérience qui vous ressemble.",
+    "Un temps de foi, de partage et de communion. Confirmez votre présence en quelques secondes afin que nous préparions au mieux ce beau moment ensemble.",
   date: "Date à confirmer",
   time: "Horaire à confirmer",
   location: "Lieu à confirmer",

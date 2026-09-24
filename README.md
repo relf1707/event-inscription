@@ -1,6 +1,6 @@
 # Rassemble — site d'inscription événementielle
 
-Site responsive en français permettant aux invités de transmettre leur **nom, prénom, adresse, téléphone** et de choisir entre **« Je vais participer »** et **« Je ne vais pas participer »**.
+Site responsive en français pour une rencontre d’église, permettant aux membres et invités de transmettre leur **nom, prénom, adresse, téléphone** et de choisir entre **« Je vais participer »** et **« Je ne vais pas participer »**.
 
 ## Fonctionnement
 
