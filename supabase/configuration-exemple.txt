@@ -1,0 +1,4 @@
+Copier ces deux lignes dans un fichier .env.local (jamais dans Git) :
+
+VITE_SUPABASE_URL=https://votre-projet.supabase.co
+VITE_SUPABASE_ANON_KEY=votre-cle-anon-publique
