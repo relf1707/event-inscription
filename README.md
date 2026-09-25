@@ -37,3 +37,11 @@ Le dépôt GitHub est configuré avec une GitHub Action. Dans le dépôt :
 3. La prochaine modification poussée sur `main` lancera le workflow `.github/workflows/deploy.yml`.
 
 Le workflow construit `dist/public` et le publie sur GitHub Pages. Les informations pratiques, le nom et la charte graphique peuvent être modifiés avant le partage du lien public.
+
+## Espace administrateur privé
+
+La page privée est disponible à l'adresse `/admin`. Elle utilise **Supabase Auth** avec email et mot de passe : aucune inscription publique n'est ouverte depuis le site.
+
+Pour créer ton accès, ouvre Supabase puis **Authentication → Users → Add user**, saisis ton adresse email et un mot de passe, puis utilise ces identifiants sur `/admin`. La table autorise l'insertion publique des réponses, mais la lecture est réservée aux utilisateurs Supabase authentifiés grâce à RLS.
+
+Depuis l'espace admin, tu peux rechercher une personne, voir les présents et les absents, te déconnecter et exporter la liste en CSV.
